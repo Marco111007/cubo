@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdbool.h>
+#include"somma.h"
+
+int main(void)
+{
+    bool loop = true;
+    int num, tot;
+
+    printf("SOMMA INCREMENTALE\n");
+
+    while(loop == true)
+    {
+        printf("inserisci un numero o scrivi 0 per uscire\n");
+        scanf("%d", &num);
+        if(num == 0)
+        {
+            loop = false;
+            printf(" \nil totale è: %d\n", tot);
+        }
+        else
+        tot = somma(num);
+    }
+
+    return 0;
+}
